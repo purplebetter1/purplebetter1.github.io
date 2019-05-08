@@ -3,41 +3,74 @@
   <head>
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
-    <style>
-        /*Global Styles*/
-      a {
-        color: red;
-      }
-      /*Bio Sytles*/
-      div.bio-box {
-          border: 1px solid green;
-      }
-      .bio-box {
-        border: 1px solid black;
-      }
-      .bio-copy a {
-        color: green;
-      }
-      /*Social Styles*/
-      .social-link {
-          color: blue;
-      }
+    
+       <style>
+  /* GLOBAL STYLES */
+  html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-size: 62.5%;
+}
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+  a {
+    color: #f00;
+  }
+
+  /* SOCIAL STYLES */
+  .social-link {
+    background: rgba(150, 150, 150, 0.5);
+    color: blue;
+  }
+
+  /* BIO STYLES */
+  .bio-wrapper {
+    
+  }
+  .bio-box {
+    border: 1px solid black;
+    font-size: 1em;
+    width: 50%;
+  }
+  .bio-box h3 {
+    font-size: 1.5em;
+  }
+  .bio-copy {
+    font-size: 1em;
+  }
+  .bio-copy a {
+    color: green;
+  }
+  /* HERO STYLES */
+.full-hero {
+  background-color: #c7dbfc;
+  height: 75vh;
+  width: 50vw;
+}
+</style>
     </style>
   </head>
   <body>
-    <h1 class="social-link">I'm an h1</h1>
-    <ul>
-      <li>
-        <a href="http://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/">Link</a>
-      </li>
-    </ul>
+   <div class="full-hero hero-home">
+  <h1>I'm an h1</h1>
+  <ul>
+    <li>
+      <a href="http://example.com/" class="social-link">Link</a>
+    </li>
+    <li>
+      <a href="http://example.com/" class="social-link">Link</a>
+    </li>
+    <li>
+      <a href="http://example.com/" class="social-link">Link</a>
+    </li>
+  </ul>
+</div>
     <h2>I'm an h2</h2>
+    <div class="bio-wrapper">
     <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="http://twitter.com/mhartl" class="social-link">here</a>
@@ -87,6 +120,7 @@
          <p>
         The Future
       </p> 
+      </div>
       </div>
       </div>
   </body>
