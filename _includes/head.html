@@ -3,6 +3,7 @@
     <title>{{ page.title }} | Test Page</title>
   {% else %}
     <title>Test Page: Don't Panic</title>
+   
   {% endif %}
    {% if page.description %}
     <meta name="description" content="{{ page.description }}">
@@ -11,6 +12,8 @@
   {% endif %}
     <link href="/favicon.png" rel="icon">
     <meta charset="utf-8">
+    <meta property="og:title" content="Don't Panic">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
